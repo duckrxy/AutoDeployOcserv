@@ -25,16 +25,16 @@ tar xvf ocserv-0.10.4.tar.xz
 
 cd ocserv-0.10.4
 
-#./configure
+./configure
 
-#make
+make
 
-#sudo make install
+sudo make install
 
 wget https://raw.githubusercontent.com/duckrxy/AutoDeployOcserv/master/ocserv.conf
 sudo mkdir /etc/ocserv
 
-sudo cp ./ocserv.config /etc/ocserv/ocserv.conf
+sudo cp ocserv.config /etc/ocserv/ocserv.conf
 
 echo Generate Certificates
 cd ~
