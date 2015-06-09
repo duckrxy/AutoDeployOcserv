@@ -12,11 +12,6 @@ wget https://raw.githubusercontent.com/duckrxy/AutoDeployOcserv/master/installpa
 sudo chmod +x ./installpackage.sh
 sudo ./installpackage.sh
 
-#sudo apt-get update
-
-#sudo apt-get install build-essential pkg-config libgnutls28-dev libreadline-dev libseccomp-dev libpam0g-dev libwrap0-dev libnl-nf-3-dev
-
-#sudo apt-get install gnutls-bin
 echo Install Ocserv
 
 wget ftp://ftp.infradead.org/pub/ocserv/ocserv-0.10.4.tar.xz
@@ -43,3 +38,9 @@ wget https://raw.githubusercontent.com/duckrxy/AutoDeployOcserv/master/generatec
 sudo chmod +x ./generatecert.sh
 
 ./generatecert.sh
+
+echo Configure Iptables 
+cd ~
+wget https://raw.githubusercontent.com/duckrxy/AutoDeployOcserv/master/configureiptables.sh
+sudo chmod +x ./configureiptables.sh
+./configureiptables.sh
