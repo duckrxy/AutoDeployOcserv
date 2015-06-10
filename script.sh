@@ -31,7 +31,7 @@ sudo rm -f ./ocserv.conf
 wget https://raw.githubusercontent.com/duckrxy/AutoDeployOcserv/master/ocserv.conf
 sudo mkdir /etc/ocserv
 
-sudo cp ocserv.config /etc/ocserv/ocserv.conf
+sudo cp ocserv.config /etc/ocserv/
 
 echo Generate Certificates
 cd ~
@@ -52,8 +52,8 @@ sudo chmod +x ./configureiptables.sh
 echo Update Configurations
 cd ~
 sudo rm -f ./updateconfig.sh
-chmod +x ./updateconfig.sh
 wget https://raw.githubusercontent.com/duckrxy/AutoDeployOcserv/master/updateconfig.sh
+chmod +x ./updateconfig.sh
 ./updateconfig.sh
 
 echo stop and start ocserv service
