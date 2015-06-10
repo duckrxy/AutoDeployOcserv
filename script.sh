@@ -55,3 +55,7 @@ sudo rm -f ./updateconfig.sh
 chmod +x ./updateconfig.sh
 wget https://raw.githubusercontent.com/duckrxy/AutoDeployOcserv/master/updateconfig.sh
 ./updateconfig.sh
+
+echo stop and start ocserv service
+sudo service ocserv stop
+sudo service ocserv start
