@@ -48,3 +48,10 @@ sudo rm -f ./configureiptables.sh
 wget https://raw.githubusercontent.com/duckrxy/AutoDeployOcserv/master/configureiptables.sh
 sudo chmod +x ./configureiptables.sh
 ./configureiptables.sh
+
+echo Update Configurations
+cd ~
+sudo rm -f ./updateconfig.sh
+chmod +x ./updateconfig.sh
+wget https://raw.githubusercontent.com/duckrxy/AutoDeployOcserv/master/updateconfig.sh
+./updateconfig.sh
