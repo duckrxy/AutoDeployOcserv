@@ -31,7 +31,7 @@ sudo rm -f ./ocserv.conf
 wget https://raw.githubusercontent.com/duckrxy/AutoDeployOcserv/master/ocserv.conf
 sudo mkdir /etc/ocserv
 
-sudo cp ocserv.config /etc/ocserv/
+sudo cp ocserv.conf /etc/ocserv/ocserv.conf
 
 echo Generate Certificates
 cd ~
